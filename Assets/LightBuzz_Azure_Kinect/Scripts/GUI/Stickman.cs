@@ -15,6 +15,7 @@ namespace LightBuzz.Kinect4Azure
         [SerializeField] private CoordinateSpace _space = CoordinateSpace.World;
         [SerializeField] private Transform[] _points = new Transform[Enum.GetValues(typeof(JointType)).Length];
         [SerializeField] private LineRenderer[] _lines = new LineRenderer[Enum.GetValues(typeof(JointType)).Length];
+        [SerializeField] public uint id;
 
         private readonly Tuple<JointType, JointType>[] _bones =
         {
@@ -87,6 +88,7 @@ namespace LightBuzz.Kinect4Azure
         /// <param name="body">The body object to load.</param>
         public void Load(Body body)
         {
+            id = body.ID;
             for (int i = 0; i < _points.Length; i++)
             {
                 Joint joint = body.Joints[(JointType) i];

@@ -46,6 +46,11 @@ namespace LightBuzz.Kinect4Azure
                 var pointCloudColor = frame.ColorFrameSource?.PointCloud;
                 var bodies = frame.BodyFrameSource?.Bodies;
 
+                for (int i = 0; i < bodies.Count; i++){
+                    Body body = bodies[i];
+                    Debug.Log(body.ID);
+                };
+
                 _pointCloud.Load(pointCloudColor, pointCloudDepth);
                 _stickmanManager.Load(bodies);
             }

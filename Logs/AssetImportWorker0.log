@@ -1,0 +1,954 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.7f1 (c53830e277f1) revision 12924976'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.630; Version 2004; 64bit' Language: 'en' Physical Memory: 32686 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/GGPC/Desktop/Prasanth/PedestrianDynamics
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54013
+Successfully changed project path to: C:/Users/GGPC/Desktop/Prasanth/PedestrianDynamics
+C:/Users/GGPC/Desktop/Prasanth/PedestrianDynamics
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 25.18 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.7f1 (c53830e277f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/GGPC/Desktop/Prasanth/PedestrianDynamics/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 Ti (ID=0x1e07)
+    Vendor:   
+    VRAM:     11049 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001706 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 20.03 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.805 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006801 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.677 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 1678.
+Total: 1.431100 ms (FindLiveObjects: 0.179300 ms CreateObjectMapping: 0.062900 ms MarkObjects: 1.119300 ms  DeleteObjects: 0.068700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/UnityFileDebug/Lib/Logger/Scripts/UnityFileDebug.cs
+  artifactKey: Guid(090d1a01815d66148a1da034355aed0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityFileDebug/Lib/Logger/Scripts/UnityFileDebug.cs using Guid(090d1a01815d66148a1da034355aed0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b66adb283ae8914629b49185a1aa75') in 0.023786 seconds
+  Import took 0.025591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.011368 seconds.
+  path: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs
+  artifactKey: Guid(c7938c93e937d3e45bb5732c388271a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs using Guid(c7938c93e937d3e45bb5732c388271a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f912b93eb82deb063db6cfa53487f6') in 0.005629 seconds
+  Import took 0.007322 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006303 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.626 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.1 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1681.
+Total: 1.466400 ms (FindLiveObjects: 0.148700 ms CreateObjectMapping: 0.039200 ms MarkObjects: 1.224300 ms  DeleteObjects: 0.053600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006749 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.629 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1684.
+Total: 1.706000 ms (FindLiveObjects: 0.315500 ms CreateObjectMapping: 0.079800 ms MarkObjects: 1.246700 ms  DeleteObjects: 0.062500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.55 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 38.0 MB.
+System memory in use after: 38.1 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1684.
+Total: 1.545800 ms (FindLiveObjects: 0.166300 ms CreateObjectMapping: 0.050000 ms MarkObjects: 1.272600 ms  DeleteObjects: 0.055900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.767 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1687.
+Total: 1.751100 ms (FindLiveObjects: 0.161400 ms CreateObjectMapping: 0.036200 ms MarkObjects: 1.454300 ms  DeleteObjects: 0.097900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1690.
+Total: 1.878800 ms (FindLiveObjects: 0.257600 ms CreateObjectMapping: 0.075500 ms MarkObjects: 1.481100 ms  DeleteObjects: 0.063600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.619 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1693.
+Total: 1.435300 ms (FindLiveObjects: 0.137400 ms CreateObjectMapping: 0.033500 ms MarkObjects: 1.219900 ms  DeleteObjects: 0.043900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 4981.988973 seconds.
+  path: Assets/Scenes/SpaceTacking.unity
+  artifactKey: Guid(6a221c8e6368b40419f9d3e93fcd9145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SpaceTacking.unity using Guid(6a221c8e6368b40419f9d3e93fcd9145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16152c7b0fe6f40de8e2c2fb83722599') in 0.013216 seconds
+  Import took 0.014852 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.47 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 38.1 MB.
+System memory in use after: 38.2 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1693.
+Total: 1.929900 ms (FindLiveObjects: 0.128100 ms CreateObjectMapping: 0.034000 ms MarkObjects: 1.721500 ms  DeleteObjects: 0.045400 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.57 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 38.1 MB.
+System memory in use after: 38.2 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1693.
+Total: 1.799100 ms (FindLiveObjects: 0.207200 ms CreateObjectMapping: 0.039800 ms MarkObjects: 1.500400 ms  DeleteObjects: 0.050400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.716414 seconds.
+  path: Assets/Resources/ApplicationLogo.jpg
+  artifactKey: Guid(3ca710d14aa45104cb965b655c21c130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ApplicationLogo.jpg using Guid(3ca710d14aa45104cb965b655c21c130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbffd21bab81ae8aeaa8ac0bc920dde7') in 0.040209 seconds
+  Import took 0.041972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_white.png
+  artifactKey: Guid(b30b51bcd6215b54e97268605a8f6712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_white.png using Guid(b30b51bcd6215b54e97268605a8f6712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a8c56a9e671a29e4c8d74a55b83e77') in 0.021519 seconds
+  Import took 0.022991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/joint.png
+  artifactKey: Guid(6ff2ebb1c82a2084f900d4bbf6e7f8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/joint.png using Guid(6ff2ebb1c82a2084f900d4bbf6e7f8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41a3784edd49378d0d4bb64cb7da87c') in 0.037619 seconds
+  Import took 0.039135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_AO.png
+  artifactKey: Guid(79dd3350a63759149948806bd68459d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_AO.png using Guid(79dd3350a63759149948806bd68459d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17fe092c780dbcf98bb283351388487') in 0.019474 seconds
+  Import took 0.021058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_red.png
+  artifactKey: Guid(07a380983c022194ca3450f369e2b3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_red.png using Guid(07a380983c022194ca3450f369e2b3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a238315de82145b5087f1ee9ca65607') in 0.009796 seconds
+  Import took 0.011618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/pants/Textures/jean_diffuse_brown.png
+  artifactKey: Guid(97bb101389c380249a76346f63601c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/pants/Textures/jean_diffuse_brown.png using Guid(97bb101389c380249a76346f63601c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb8f65bd6316fe492c7daf4cdb63bba') in 0.012946 seconds
+  Import took 0.014677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Awesome Charts/Core/Resources/Sprites/bar_background.png
+  artifactKey: Guid(046ac2ea01b724729b747e4a29b868ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Awesome Charts/Core/Resources/Sprites/bar_background.png using Guid(046ac2ea01b724729b747e4a29b868ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba4effca4005dac3b7fb50e75b39dc9') in 0.013441 seconds
+  Import took 0.015291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/pants/Textures/jean_diffuse_blue.png
+  artifactKey: Guid(1796903c58cea6d459f22d279f4d00a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/pants/Textures/jean_diffuse_blue.png using Guid(1796903c58cea6d459f22d279f4d00a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fa46656d92ca3369323f27a8f17fc7') in 0.013462 seconds
+  Import took 0.015308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_MetallicSmoothness.png
+  artifactKey: Guid(5f3a75ab7a3250c428eab98196147896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_MetallicSmoothness.png using Guid(5f3a75ab7a3250c428eab98196147896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dde1f940ba27207445423e7806918eb') in 0.036379 seconds
+  Import took 0.039099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_green.png
+  artifactKey: Guid(4009b076c54d4894cab6631fe9a960e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_green.png using Guid(4009b076c54d4894cab6631fe9a960e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbacfde8a55e54c85848fe18f92e3d41') in 0.013719 seconds
+  Import took 0.015313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Play.png
+  artifactKey: Guid(da87dccd658f4c04b9df7b21a4213c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Play.png using Guid(da87dccd658f4c04b9df7b21a4213c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9701a8ded5f50a5d9394802959f902e4') in 0.013090 seconds
+  Import took 0.014721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/pants/Textures/jean_diffuse_black.png
+  artifactKey: Guid(cde1cd41ab97fe449b52cbdec0f25390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/pants/Textures/jean_diffuse_black.png using Guid(cde1cd41ab97fe449b52cbdec0f25390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62bf37d6550b8e269e7f185578151d9b') in 0.012320 seconds
+  Import took 0.014014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Hair_Normal.PSD
+  artifactKey: Guid(a9a8a3491c9f1a644a63aeffb933ef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Hair_Normal.PSD using Guid(a9a8a3491c9f1a644a63aeffb933ef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2d361c42d472f6362e4d95949a0c2f') in 0.019125 seconds
+  Import took 0.020715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Back.png
+  artifactKey: Guid(d14fe633be7947b46823de5f64b4e7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Back.png using Guid(d14fe633be7947b46823de5f64b4e7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9ff3d56da62ad82aa276e27ce737b0') in 0.012026 seconds
+  Import took 0.013569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/rectangle.png
+  artifactKey: Guid(3159228adbd92af4b8da034cd53ca37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/rectangle.png using Guid(3159228adbd92af4b8da034cd53ca37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd4ecd6a0d0447f26f9896e550927c57') in 0.012929 seconds
+  Import took 0.014543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Head_Normal.PSD
+  artifactKey: Guid(bb51f756833bc934ca92d41c02240a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Head_Normal.PSD using Guid(bb51f756833bc934ca92d41c02240a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6609715ec0f4619fa56251dde25d6522') in 0.013681 seconds
+  Import took 0.015221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_blue.png
+  artifactKey: Guid(cfb7449928a1ffc45a155ca48b66a30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_blue.png using Guid(cfb7449928a1ffc45a155ca48b66a30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4a92e7e9adfaf493d4bcec69e505b4') in 0.013298 seconds
+  Import took 0.014930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Normal.png
+  artifactKey: Guid(d47a1d6020f578447959def87c80985b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Normal.png using Guid(d47a1d6020f578447959def87c80985b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9a1a81a41376bcf3d315f8cb21bdd0') in 0.023115 seconds
+  Import took 0.025819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/lightbuzz-logo-white.png
+  artifactKey: Guid(687bdfa9a7aaa2c4b8b264516ff7ce94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/lightbuzz-logo-white.png using Guid(687bdfa9a7aaa2c4b8b264516ff7ce94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4cf6cfd24bde612793223f2a429fd6') in 0.014627 seconds
+  Import took 0.016309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Resources/icconNew.png
+  artifactKey: Guid(fb3aeb59a0a7ce54cb16329ffc960185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/icconNew.png using Guid(fb3aeb59a0a7ce54cb16329ffc960185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003e907b1a52376c0f4fdce7376fe42f') in 0.011884 seconds
+  Import took 0.013513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_black.png
+  artifactKey: Guid(0ff8c99e88d1bc64082e9b95ebf178e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_black.png using Guid(0ff8c99e88d1bc64082e9b95ebf178e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd207994c4a75cf64dc3b6f7dc6e999da') in 0.012313 seconds
+  Import took 0.013937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_red_logo.png
+  artifactKey: Guid(48088439bfdc14443855192084081686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_red_logo.png using Guid(48088439bfdc14443855192084081686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1833afc9eb499a8d69e4bbd15c8e0582') in 0.014501 seconds
+  Import took 0.016091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_HeadGear_Diffuse.PSD
+  artifactKey: Guid(8efca9df185ccef4fb2cdbe16c23e8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_HeadGear_Diffuse.PSD using Guid(8efca9df185ccef4fb2cdbe16c23e8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8807637ef69ddcc2a3a1fec51277e2b') in 0.011815 seconds
+  Import took 0.013387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Hair_Diffuse.psd
+  artifactKey: Guid(9d2ad1529331867408ad8457f5c17604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Hair_Diffuse.psd using Guid(9d2ad1529331867408ad8457f5c17604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1529fcac82aea50c8694a80774a0db0a') in 0.014700 seconds
+  Import took 0.016230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Diffuse.png
+  artifactKey: Guid(b911ab9573979a04a961a29ee026547e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Diffuse.png using Guid(b911ab9573979a04a961a29ee026547e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3395dff80674c3b2198ebf93268cf350') in 0.022897 seconds
+  Import took 0.025565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Awesome Charts/Core/Resources/Sprites/gradient_background.png
+  artifactKey: Guid(e79b36622be6d45698d64f76f3af9b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Awesome Charts/Core/Resources/Sprites/gradient_background.png using Guid(e79b36622be6d45698d64f76f3af9b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6efff1c2ad35e033e347fa6e28224fbe') in 0.015949 seconds
+  Import took 0.017696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Awesome Charts/Core/Resources/Sprites/pie_chart_image.png
+  artifactKey: Guid(47e872887cbd849c48543be26a3f3873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Awesome Charts/Core/Resources/Sprites/pie_chart_image.png using Guid(47e872887cbd849c48543be26a3f3873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f956b00ace4e5146eef010a115ac8cb') in 0.013655 seconds
+  Import took 0.015298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Logo.png
+  artifactKey: Guid(173e0a146f1ec1647ad8d73643a0d9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Logo.png using Guid(173e0a146f1ec1647ad8d73643a0d9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd880baabbcb6460dd4c39d2a729116cc') in 0.012524 seconds
+  Import took 0.014075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Close.png
+  artifactKey: Guid(179bc8f3db3195646a32087fb74a4aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Close.png using Guid(179bc8f3db3195646a32087fb74a4aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e99728f412e38d060931a97254884873') in 0.012915 seconds
+  Import took 0.014616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_HeadGear_Normal.tga
+  artifactKey: Guid(ba75a7f5d2ba98b4aa1098c26c2ba8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_HeadGear_Normal.tga using Guid(ba75a7f5d2ba98b4aa1098c26c2ba8d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9229f249b1e1557551c10a133eecd957') in 0.015277 seconds
+  Import took 0.017008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Curvature.png
+  artifactKey: Guid(f7c35f789b56d2b4aa5e0bf76ff9544b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Textures/CodeMan_Curvature.png using Guid(f7c35f789b56d2b4aa5e0bf76ff9544b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02537d1bfc7126b5506f665b285bc47') in 0.013700 seconds
+  Import took 0.015301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_white.png
+  artifactKey: Guid(1701ebdd8f44b2b40bf3e201b520b7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_white.png using Guid(1701ebdd8f44b2b40bf3e201b520b7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f659b6effbaca0e5f7b996a6020f17') in 0.014659 seconds
+  Import took 0.016197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_normal.png
+  artifactKey: Guid(1be637121f5a34d4a9f0f63e93e68a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_normal.png using Guid(1be637121f5a34d4a9f0f63e93e68a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f60eb0e3731ec80ad13fb1369d2f835') in 0.013465 seconds
+  Import took 0.015043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Radio.png
+  artifactKey: Guid(6f852f5d2cc862b46827678248454aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Radio.png using Guid(6f852f5d2cc862b46827678248454aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6600c3dae9acb4f04a1f92cb540e7c0') in 0.012590 seconds
+  Import took 0.014475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Pause.png
+  artifactKey: Guid(8c6b8705acf773349bd0bdd552dc3252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Pause.png using Guid(8c6b8705acf773349bd0bdd552dc3252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573bfb030b0b77a5478485158a486fb3') in 0.011294 seconds
+  Import took 0.012920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Awesome Charts/Core/Resources/Sprites/popup.png
+  artifactKey: Guid(281dfe0ecf5684fc4a9255b654e9b408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Awesome Charts/Core/Resources/Sprites/popup.png using Guid(281dfe0ecf5684fc4a9255b654e9b408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414b2305a6ca24e5e4915879f72eb4e0') in 0.015560 seconds
+  Import took 0.017353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Stop.png
+  artifactKey: Guid(c2e6d5c42a56d3b458fd82a3298e247d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Stop.png using Guid(c2e6d5c42a56d3b458fd82a3298e247d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cea86278b83ff842d09993d2601611b') in 0.011531 seconds
+  Import took 0.013212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_green.png
+  artifactKey: Guid(2a7c9d03757a27d44aadb9814ad868e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/t-shirt/Textures/polo_diffuse_green.png using Guid(2a7c9d03757a27d44aadb9814ad868e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63153318edb037c2ddf337dc601db65d') in 0.014395 seconds
+  Import took 0.016134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Menu.png
+  artifactKey: Guid(df2b9b3ea78ef434bbe666b905847cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Menu.png using Guid(df2b9b3ea78ef434bbe666b905847cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b05bd340fad249784882aee870e0665') in 0.012146 seconds
+  Import took 0.013710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_red.png
+  artifactKey: Guid(bd6b5218bdd247a439720065d1a8a878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_red.png using Guid(bd6b5218bdd247a439720065d1a8a878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15b510983ee5369992b09da3f3fdeb1') in 0.012543 seconds
+  Import took 0.014196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/Video/Loop.png
+  artifactKey: Guid(8e11479c5d05bdd488fe66ba7b02d507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/Video/Loop.png using Guid(8e11479c5d05bdd488fe66ba7b02d507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1ec27e20d54a53fbd950a942e96d47') in 0.012909 seconds
+  Import took 0.014460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_white_logo.png
+  artifactKey: Guid(1c7b231ef65d7af43a776fbf052dd4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_white_logo.png using Guid(1c7b231ef65d7af43a776fbf052dd4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d646689724536beade81d03e5bf502') in 0.014669 seconds
+  Import took 0.016218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_green_logo.png
+  artifactKey: Guid(21d03f0e01da9864a8e216f3ab0d5f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_green_logo.png using Guid(21d03f0e01da9864a8e216f3ab0d5f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c2004b78974562403ed478fe9127cab') in 0.014239 seconds
+  Import took 0.016101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Images/lightbuzz-icon-white.png
+  artifactKey: Guid(fba32ede2ea46af46bee51f558dcc32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Images/lightbuzz-icon-white.png using Guid(fba32ede2ea46af46bee51f558dcc32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250f461b5e7101624017aed46f70cf35') in 0.013976 seconds
+  Import took 0.015618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006081 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_green_logo.png
+  artifactKey: Guid(21d03f0e01da9864a8e216f3ab0d5f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/Textures/longsleeve_diffuse_green_logo.png using Guid(21d03f0e01da9864a8e216f3ab0d5f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c2004b78974562403ed478fe9127cab') in 0.009961 seconds
+  Import took 0.011962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.509104 seconds.
+  path: Assets/Resources/ApplicationLogo.png
+  artifactKey: Guid(5000404c6c05bc1408045a6acd592627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ApplicationLogo.png using Guid(5000404c6c05bc1408045a6acd592627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ccc53fc6e5882ce17521bab1f33638') in 0.012433 seconds
+  Import took 0.014211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010911 seconds.
+  path: Assets/Resources/ApplicationLogo.png
+  artifactKey: Guid(5000404c6c05bc1408045a6acd592627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ApplicationLogo.png using Guid(5000404c6c05bc1408045a6acd592627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ccc53fc6e5882ce17521bab1f33638') in 0.010573 seconds
+  Import took 0.012438 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.64 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 41.5 MB.
+System memory in use after: 41.6 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1712.
+Total: 2.065300 ms (FindLiveObjects: 0.128900 ms CreateObjectMapping: 0.040700 ms MarkObjects: 1.851500 ms  DeleteObjects: 0.043500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006305 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.634 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 65.4 MB.
+System memory in use after: 65.5 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1715.
+Total: 1.454800 ms (FindLiveObjects: 0.126100 ms CreateObjectMapping: 0.040600 ms MarkObjects: 1.241600 ms  DeleteObjects: 0.045900 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.41 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 41.4 MB.
+System memory in use after: 41.4 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1715.
+Total: 1.574700 ms (FindLiveObjects: 0.140500 ms CreateObjectMapping: 0.032000 ms MarkObjects: 1.351600 ms  DeleteObjects: 0.049400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 658.360568 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Model/CodeMan.FBX
+  artifactKey: Guid(ef11f15682ae41344ba781010ba3294f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/CodeMan/Model/CodeMan.FBX using Guid(ef11f15682ae41344ba781010ba3294f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd829c20089465d32e0c22cd413babeab') in 0.637928 seconds
+  Import took 0.643488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/pants/pants.FBX
+  artifactKey: Guid(e2f303772f91b8c44ae42a807b55c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/pants/pants.FBX using Guid(e2f303772f91b8c44ae42a807b55c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2170397ce59a5fddcd9b46281b2286b') in 0.023304 seconds
+  Import took 0.025186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/t-shirt/t-shirt.FBX
+  artifactKey: Guid(1de1e50749e14544fb0eb58031106d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/t-shirt/t-shirt.FBX using Guid(1de1e50749e14544fb0eb58031106d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cdd5812af89b266bc39bec102525021') in 0.022432 seconds
+  Import took 0.024214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/Kinect.fbx
+  artifactKey: Guid(ba9d4740c4a65a64eb37172b35ae75de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/Kinect.fbx using Guid(ba9d4740c4a65a64eb37172b35ae75de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8d51330dd68efe320f797abec537ba') in 0.033781 seconds
+  Import took 0.035425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/LightBuzz_Azure_Kinect/Models/longsleeve/longsleeve.FBX
+  artifactKey: Guid(b4bb6218f635ae944bb2a207d57dcaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LightBuzz_Azure_Kinect/Models/longsleeve/longsleeve.FBX using Guid(b4bb6218f635ae944bb2a207d57dcaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec78c5ff86979569441d8a972cb6111') in 0.037096 seconds
+  Import took 0.038886 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006311 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.620 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.0 MB.
+System memory in use after: 80.1 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1759.
+Total: 1.483000 ms (FindLiveObjects: 0.124000 ms CreateObjectMapping: 0.033200 ms MarkObjects: 1.282000 ms  DeleteObjects: 0.043200 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.55 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 55.9 MB.
+System memory in use after: 56.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1759.
+Total: 1.527900 ms (FindLiveObjects: 0.126900 ms CreateObjectMapping: 0.040000 ms MarkObjects: 1.315500 ms  DeleteObjects: 0.044800 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.32 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 55.9 MB.
+System memory in use after: 56.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1759.
+Total: 1.544000 ms (FindLiveObjects: 0.207100 ms CreateObjectMapping: 0.063300 ms MarkObjects: 1.229900 ms  DeleteObjects: 0.043000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006265 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.619 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.0 MB.
+System memory in use after: 80.1 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1762.
+Total: 1.650000 ms (FindLiveObjects: 0.140000 ms CreateObjectMapping: 0.041800 ms MarkObjects: 1.416300 ms  DeleteObjects: 0.051100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006496 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.613 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.0 MB.
+System memory in use after: 80.1 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1765.
+Total: 1.459200 ms (FindLiveObjects: 0.188300 ms CreateObjectMapping: 0.051800 ms MarkObjects: 1.169000 ms  DeleteObjects: 0.049200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006654 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Log] Successfully initialized Unity environment for Kinect!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Debug:Log (object,DLogType) (at Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs:53)
+LightBuzz.Kinect4Azure.UnityEnvironment:.cctor () (at Assets/LightBuzz_Azure_Kinect/Scripts/Editor/UnityEnvironment.cs:104)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs Line: 53)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.602 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.0 MB.
+System memory in use after: 80.1 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 1768.
+Total: 1.441000 ms (FindLiveObjects: 0.190300 ms CreateObjectMapping: 0.054000 ms MarkObjects: 1.149100 ms  DeleteObjects: 0.046500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
