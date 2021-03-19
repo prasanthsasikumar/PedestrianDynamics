@@ -8,7 +8,10 @@ public class GizmosController : MonoBehaviour
 
     private Vector3 screenPoint;
     private Vector3 offset;
-    private bool cntrlPressed,shiftPressed;
+    private bool mouseDragged, cntrlPressed,shiftPressed;
+
+    public bool attachToParentOnRelease = false;
+    public GameObject snapParent;
 
     void OnMouseDown()
     {
@@ -20,6 +23,8 @@ public class GizmosController : MonoBehaviour
 
     void OnMouseDrag()
     {
+        mouseDragged = true;
+
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
@@ -33,6 +38,12 @@ public class GizmosController : MonoBehaviour
         }else
             transform.position = curPosition;
 
+    }
+
+    private void OnMouseUp()
+    {
+        mouseDragged = false;
+        AttachToExit();
     }
 
     private void Update()
@@ -56,6 +67,16 @@ public class GizmosController : MonoBehaviour
         {
             shiftPressed = false;
 
+        }
+    }
+
+    //Not To be used
+    public void AttachToExit()
+    {
+        //get the parent y position. add the localscale y of both to get the required offset. Place the scan area there.
+        if (attachToParentOnRelease)
+        {
+            transform.position = snapParent.transform.position + (snapParent.transform.up * ((transform.localScale.y/2)+0.2f));
         }
     }
 

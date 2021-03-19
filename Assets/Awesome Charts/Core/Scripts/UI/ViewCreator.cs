@@ -46,14 +46,14 @@ namespace AwesomeCharts {
 
         public GameObject InstantiateContentView (Transform parent) {
             GameObject content = CreateBaseGameObject ("Content", parent, PivotValue.BOTTOM_LEFT);
-            content.AddComponent<CanvasRenderer> ();
+            //content.AddComponent<CanvasRenderer> ();
 
             return content;
         }
 
         public GameObject InstantiateChartDataContainerView (Transform parent) {
             GameObject content = CreateBaseGameObject ("Content", parent, PivotValue.BOTTOM_LEFT);
-            content.AddComponent<CanvasRenderer> ();
+            //content.AddComponent<CanvasRenderer> ();
 
             return content;
         }

@@ -15,7 +15,10 @@ public enum DLogType
     GUI,
     Input,
     Network,
-    Physics
+    Physics,
+    ScanArea,
+    Speed,
+    Density
 }
 
 public static class Debug

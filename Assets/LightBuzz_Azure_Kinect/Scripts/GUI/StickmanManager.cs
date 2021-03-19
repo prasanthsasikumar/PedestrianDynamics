@@ -115,5 +115,15 @@ namespace LightBuzz.Kinect4Azure
 
             _stickmen.Clear();
         }
+
+        public GameObject GetStickmanFromId(uint bodyID)
+        {
+            foreach(Stickman stickman in _stickmen)
+            {
+                if (stickman.id == bodyID)
+                    return stickman.gameObject;
+            }
+            return null;
+        }
     }
 }

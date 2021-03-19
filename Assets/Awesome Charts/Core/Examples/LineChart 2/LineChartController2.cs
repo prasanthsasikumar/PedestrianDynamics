@@ -55,7 +55,7 @@ namespace AwesomeCharts {
             set2.FillColor = new Color32(9, 107, 67, 110);
 
             chart.GetChartData().DataSets.Add(set1);
-            chart.GetChartData().DataSets.Add(set2);
+            //chart.GetChartData().DataSets.Add(set2);
 
             chart.SetDirty();
         }
