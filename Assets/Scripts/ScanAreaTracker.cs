@@ -2,32 +2,35 @@ using LightBuzz.Kinect4Azure;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScanAreaTracker : MonoBehaviour
 {
-    private List<uint> bodiesThatEnteredScanArea, bodiesCurrentlyInScanArea;
+    private List<uint> bodiesCurrentlyInScanArea;
+    public Text NumberOfPeopleinScanArea;
 
     public FlowMonitor flowMonitor;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
-        bodiesThatEnteredScanArea = new List<uint>();//REMOVE THIS EVENTUALLY!!!!!!!!!!!!!!
         bodiesCurrentlyInScanArea = new List<uint>();
+    }
+
+    private void Update()
+    {
+
+        NumberOfPeopleinScanArea.text = "In Scan space : " + bodiesCurrentlyInScanArea.Count;
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
         uint personId = other.transform.parent.transform.parent.gameObject.GetComponent<Stickman>().id;
-        if (!bodiesThatEnteredScanArea.Contains(personId))
-        {
-            bodiesThatEnteredScanArea.Add(personId);
-            flowMonitor.AddTrackingInfo(personId, other.transform.position, Time.time);
-        }
         if (!bodiesCurrentlyInScanArea.Contains(personId))
         {
             bodiesCurrentlyInScanArea.Add(personId);
+            flowMonitor.AddTrackingInfo(personId, other.transform.position, Time.time);
         }
     }
 
@@ -38,12 +41,6 @@ public class ScanAreaTracker : MonoBehaviour
         {
             bodiesCurrentlyInScanArea.Remove(personId);
         }
-    }
-
-    public List<uint> GetListOfBodiesthatEnteredScanArea()
-    {
-        //Debug.Log(peopleAboutToExit.Count);
-        return bodiesThatEnteredScanArea;
     }
     public List<uint> GetListOfBodiesthatAreInScanArea()
     {

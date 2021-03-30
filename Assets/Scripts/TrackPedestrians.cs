@@ -16,7 +16,7 @@ public class TrackPedestrians : MonoBehaviour
 
     private KinectSensor _sensor;
 
-    public Text NumberOfPeople;
+    //public Text NumberOfPeople;
 
     private void Start()
     {
@@ -54,7 +54,7 @@ public class TrackPedestrians : MonoBehaviour
             _pointCloud.Load(pointCloudColor, pointCloudDepth);
             _stickmanManager.Load(bodies);
         }
-        NumberOfPeople.text = "In space : " + _stickmanManager.Count;
+        //NumberOfPeople.text = "In space : " + _stickmanManager.Count;
     }
 
 

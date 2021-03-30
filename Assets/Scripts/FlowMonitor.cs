@@ -43,15 +43,16 @@ public class FlowMonitor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Get the number of skeltons that are being tracked. Density calculated by number of people in the tracked area. Flow tracked by how much people move in a given time
-        listOfBodiesInTrackingSpace = scanArea.GetComponent<ScanAreaTracker>().GetListOfBodiesthatAreInScanArea();
-        density = listOfBodiesInTrackingSpace.Count / (scanArea.transform.localScale.x * scanArea.transform.localScale.z);
-        Debug.Log("Density is " + density + "/m^2. Scan Area is " + scanArea.transform.localScale.x * scanArea.transform.localScale.z, DLogType.Density);
+        
     }
 
     public void TrackFlow()
     {
+        //Get the number of skeltons that are being tracked. Density calculated by number of people in the tracked area. Flow tracked by how much people move in a given time
+        listOfBodiesInTrackingSpace = scanArea.GetComponent<ScanAreaTracker>().GetListOfBodiesthatAreInScanArea();
+        density = listOfBodiesInTrackingSpace.Count / (scanArea.transform.localScale.x * scanArea.transform.localScale.z);
         densityText.text = "Density:" + density + "pp/m^2. Area: " + scanArea.transform.localScale.y * scanArea.transform.localScale.z + "m^2";
+        Debug.Log("Density is " + density + "/m^2. Scan Area is " + scanArea.transform.localScale.x * scanArea.transform.localScale.z, DLogType.Density);
 
         //Get skeltons in tracking area and store thier position
         foreach (uint bodyId in listOfBodiesInTrackingSpace)
@@ -96,7 +97,7 @@ public class FlowMonitor : MonoBehaviour
         //List the speed of people moving in space.
         foreach (TrackedBody trackedBody in trackedBodies)
         {
-            Debug.Log("Speed of Body "+trackedBody.bodyId+" is "+ trackedBody.AverageSpeed() + "m/s", DLogType.Speed);
+            Debug.Log("Speed of Body "+trackedBody.bodyId+" is "+ trackedBody.AverageSpeed() + "m/s and Density is " + density, DLogType.Speed);
         }
 
         //Draw the Graph

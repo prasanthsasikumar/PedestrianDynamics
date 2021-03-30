@@ -37,7 +37,7 @@ public class ExitAreaTracking : MonoBehaviour
         if(!peopleExited.Contains(personId))
         {
             //Entering inside the building
-            if (InfrontOfExit.GetListOfBodiesthatEnteredScanArea().Contains(personId) && !peopleEntered.Contains(personId))
+            if (InfrontOfExit.GetListOfBodiesthatAreInScanArea().Contains(personId) && !peopleEntered.Contains(personId))
             {
                 peopleExited.Add(personId);
                 flowMonitor.AddTrackingInfo(personId,transform.position,Time.time);
