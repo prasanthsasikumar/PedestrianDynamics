@@ -9,11 +9,12 @@ using UnityEngine.UI;
 public class FlowMonitor : MonoBehaviour
 {
     private float density, flow;
-    private List<uint> listOfBodiesInTrackingSpace;
+    private List<Body> listOfBodiesInScanArea;
     private int deltaTime = 2;
     private List<TrackedBody> trackedBodies;
     private List<DataPoint> datapoints;
     private LineDataSet set1;
+    private ExitAreaTracking[] exitAreas;
 
     public Text densityText;
     public LineChart chart;
@@ -26,7 +27,8 @@ public class FlowMonitor : MonoBehaviour
     {
         trackedBodies = new List<TrackedBody>();
         datapoints = new List<DataPoint>();
-        Debug.Log("Flow Check every " + timeScale.value+1 + "s");
+        exitAreas = (ExitAreaTracking[])GameObject.FindObjectsOfType(typeof(ExitAreaTracking));
+        Debug.Log("Flow Check every " + (timeScale.value+1) + "s");
         InvokeRepeating("TrackFlow", 2.0f, timeScale.value+1);
         ConfigChart(); 
         set1 = new LineDataSet();
@@ -49,55 +51,52 @@ public class FlowMonitor : MonoBehaviour
     public void TrackFlow()
     {
         //Get the number of skeltons that are being tracked. Density calculated by number of people in the tracked area. Flow tracked by how much people move in a given time
-        listOfBodiesInTrackingSpace = scanArea.GetComponent<ScanAreaTracker>().GetListOfBodiesthatAreInScanArea();
-        density = listOfBodiesInTrackingSpace.Count / (scanArea.transform.localScale.x * scanArea.transform.localScale.z);
+        listOfBodiesInScanArea = scanArea.GetComponent<ScanAreaTracker>().GetListOfBodiesthatAreInScanArea();
+        density = listOfBodiesInScanArea.Count / (scanArea.transform.localScale.x * scanArea.transform.localScale.z);
         densityText.text = "Density:" + density + "pp/m^2. Area: " + scanArea.transform.localScale.y * scanArea.transform.localScale.z + "m^2";
         Debug.Log("Density is " + density + "/m^2. Scan Area is " + scanArea.transform.localScale.x * scanArea.transform.localScale.z, DLogType.Density);
 
+
         //Get skeltons in tracking area and store thier position
-        foreach (uint bodyId in listOfBodiesInTrackingSpace)
+        foreach (Body body in listOfBodiesInScanArea)
         {
-            GameObject body = stickmanManager.GetStickmanFromId(bodyId);
-            if (body)
+            Vector3 trackedBodyPoint = body.Joints[JointType.Pelvis].Position;            
+            foreach (TrackedBody trackedBody in trackedBodies)
             {
-                //Body has a local position of 0,0,0. We are tracking pelvis joint to keep track of the body.
-                //Debug.Log("Body " + bodyId + " is at " + body.transform.GetChild(0).GetChild(0).transform.position);
-                Transform trackedBodyPoint = body.transform.GetChild(0).GetChild(0);
-
-                bool foundBodyInList = false;
-                foreach (TrackedBody trackedBody in trackedBodies)
+                if (trackedBody.bodyId == body.ID)//Already being tracked, add position information
                 {
-                    if (trackedBody.bodyId == bodyId)//Already being tracked, add position information
-                    {
-                        trackedBody.positions.Add(trackedBodyPoint.transform.position);
-                        trackedBody.timestamp.Add(Time.time);
-                        foundBodyInList = true;
-                    }
+                    trackedBody.positions.Add(trackedBodyPoint);
+                    trackedBody.timestamp.Add(Time.time * 1000);
                 }
-                if (!foundBodyInList)//New body. Add to list
-                {
-                    TrackedBody newbody = new TrackedBody(bodyId, trackedBodyPoint.transform.position, Time.time);
-                    trackedBodies.Add(newbody);               
-                }                
+            }                
 
-                //update the datapoint entry
-                foreach (DataPoint datapoint in datapoints.ToArray())
+            //update the datapoint entry For graph
+            foreach (DataPoint datapoint in datapoints.ToArray())
+            {
+                //remove matching one and add the new one.
+                if(datapoint.density == trackedBodies.Count)
                 {
-                    //remove matching one and add the new one.
-                    if(datapoint.density == trackedBodies.Count)
-                    {
-                        datapoints.Remove(datapoint);
-                        datapoints.Add(new DataPoint(trackedBodies.Count, trackedBodies));
-                    }
+                    datapoints.Remove(datapoint);
+                    datapoints.Add(new DataPoint(trackedBodies.Count, trackedBodies));
                 }
-
             }
+
         }
 
         //List the speed of people moving in space.
         foreach (TrackedBody trackedBody in trackedBodies)
         {
-            Debug.Log("Speed of Body "+trackedBody.bodyId+" is "+ trackedBody.AverageSpeed() + "m/s and Density is " + density, DLogType.Speed);
+            //If it has been a while since the last update, the body is long gone. So we can stop logging its speed.
+            if ((Time.time * 1000 - trackedBody.timestamp[trackedBody.timestamp.Count - 1]) < (timeScale.value + 1) && trackedBody.AverageSpeed() > 0)
+            {
+                Debug.Log("Speed of Body " + trackedBody.bodyId + " is " + trackedBody.AverageSpeed() + "m/s and Density is " + density, DLogType.Speed);
+                //Debug.Log("Speed of Body " + trackedBody.bodyId + " is " + trackedBody.GetSpeed() + "m/s and Density is " + density, DLogType.Speed);
+            }
+        }
+
+        foreach (ExitAreaTracking exitArea in exitAreas)
+        {
+           // Debug.Log(exitArea.gameObject.name + " - flow rate : " + exitArea.GetNumberofPeopleExited(), DLogType.FlowRate);
         }
 
         //Draw the Graph
@@ -117,13 +116,20 @@ public class FlowMonitor : MonoBehaviour
 
     public void AddTrackingInfo(uint bodyId, Vector3 position, float time)
     {
+        bool foundBodyInList = false;
         foreach (TrackedBody trackedBody in trackedBodies)
         {
             if (trackedBody.bodyId == bodyId)
             {
                 trackedBody.positions.Add(position);
                 trackedBody.timestamp.Add(time);
+                foundBodyInList = true;
             }
+        }
+        if (!foundBodyInList)//New body. Add to list
+        {
+            TrackedBody newbody = new TrackedBody(bodyId, position, time);
+            trackedBodies.Add(newbody);
         }
     }
 
@@ -181,7 +187,7 @@ public class TrackedBody
     {
         if (positions.Count > 1)
         {
-            return (Vector3.Distance(positions[0], positions[positions.Count - 1])) / (timestamp[timestamp.Count - 1] - timestamp[0]);
+            return (Vector3.Distance(positions[0], positions[positions.Count - 1])) / (timestamp[timestamp.Count - 1] - timestamp[0]) * 1000;
         }
         else
         {
@@ -190,9 +196,24 @@ public class TrackedBody
 
     }
 
+    public float GetSpeed()
+    {
+        if (positions.Count > 1)
+        {
+            return (Vector3.Distance(positions[positions.Count - 2], positions[positions.Count - 1])) / (timestamp[timestamp.Count - 1] - timestamp[timestamp.Count - 2]) * 1000;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
 }
 
+public class FlowClass
+{
 
+}
 
 public class DataPoint
 {

@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AutoScale
     - AwesomeCharts.ChartValuePopup
     - AwesomeCharts.LegendEntryView
     - AwesomeCharts.LineChart
@@ -14,7 +15,9 @@ ScriptsOnlyBuild:
     - LightBuzz.Kinect4Azure.PointCloud
     - LightBuzz.Kinect4Azure.Stickman
     - LightBuzz.Kinect4Azure.StickmanManager
+    - MoveCamera
     - OpenDirectory
+    - RotateObject
     - SSS.UnityFileDebug.UnityFileDebug
     - ScaleSize
     - ScanAreaTracker
@@ -51,7 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/SpaceTacking.unity:
+    Assets/Scenes/AllSidesTracking.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -97,79 +100,85 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1578}
     - Class: 114
-      Script: {instanceID: 1730}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 1784}
+      Script: {instanceID: 1732}
     - Class: 114
-      Script: {instanceID: 1794}
+      Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 1808}
+      Script: {instanceID: 1796}
     - Class: 114
-      Script: {instanceID: 1938}
+      Script: {instanceID: 1810}
     - Class: 114
-      Script: {instanceID: 2210}
+      Script: {instanceID: 1940}
     - Class: 114
-      Script: {instanceID: 2248}
+      Script: {instanceID: 2214}
     - Class: 114
-      Script: {instanceID: 2370}
+      Script: {instanceID: 2252}
     - Class: 114
       Script: {instanceID: 2374}
     - Class: 114
-      Script: {instanceID: 2558}
+      Script: {instanceID: 2378}
     - Class: 114
-      Script: {instanceID: 2596}
+      Script: {instanceID: 2562}
     - Class: 114
-      Script: {instanceID: 2642}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2670}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2674}
     - Class: 114
-      Script: {instanceID: 2764}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 2832}
     - Class: 114
-      Script: {instanceID: 2922}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 2928}
     - Class: 114
-      Script: {instanceID: 3080}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 3086}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 3160}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 3194}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3200}
     - Class: 114
-      Script: {instanceID: 3312}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3338}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3374}
+      Script: {instanceID: 3324}
     - Class: 114
-      Script: {instanceID: 3448}
+      Script: {instanceID: 3346}
     - Class: 114
-      Script: {instanceID: 3512}
+      Script: {instanceID: 3382}
     - Class: 114
-      Script: {instanceID: 3708}
+      Script: {instanceID: 3456}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 3870}
+      Script: {instanceID: 3650}
     - Class: 114
-      Script: {instanceID: 3946}
+      Script: {instanceID: 3688}
     - Class: 114
-      Script: {instanceID: 4038}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 16840}
+      Script: {instanceID: 3736}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3958}
+    - Class: 114
+      Script: {instanceID: 4050}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -177,6 +186,8 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -203,16 +214,16 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -233,7 +244,7 @@ ScriptsOnlyBuild:
     className: TMP_FrameRateCounter
   - hash:
       serializedVersion: 2
-      Hash: 8a8707c110d92a3d3765642684de4b2e
+      Hash: 9003c0be59d79eae7d9e104b9dace4a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TrackPedestrians
@@ -261,6 +272,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 39cb658ddcffdac495cfb828e565a950
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AutoScale
   - hash:
       serializedVersion: 2
       Hash: 06c405ce606b90ddee260fe227ce0514
@@ -479,6 +496,12 @@ ScriptsOnlyBuild:
     className: Demo_Kinect4Azure_Angles
   - hash:
       serializedVersion: 2
+      Hash: b2432beeab96e163276453a2d14f88f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrackPeopleExiting
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
@@ -611,7 +634,7 @@ ScriptsOnlyBuild:
     className: UpdateTextOnSliderChange
   - hash:
       serializedVersion: 2
-      Hash: 7472d05d5dff192d274489d3e2c7c580
+      Hash: e90ec2c7e89695c0bd02494e2f47cfa9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScanAreaTracker
@@ -679,11 +702,17 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrackEntryOfPeopleExiting
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
     namespaceName: AwesomeCharts
     className: ACMonoBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 7e40ba11f284e5c5a559e865423c1c9d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScaleSize
@@ -815,7 +844,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 9d0aa5a08ab6419dc84feceac780cb4a
+      Hash: c508dbf32c251ce8d0674971acce180f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ExitAreaTracking
@@ -855,6 +884,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 5b1aa3e4f567f9eb708fbca31deafe1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ConfigurationManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -987,6 +1022,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: AwesomeCharts
     className: LineChartBackground
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 61f763d8b32a9bb14ed977dcda322c4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotateObject
   - hash:
       serializedVersion: 2
       Hash: 9c90aaf262af267236049f3ebbc25127
@@ -1173,13 +1220,7 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: LightBuzz.Kinect4Azure
     className: LookAtObject
-  - hash:
-      serializedVersion: 2
-      Hash: 5b1aa3e4f567f9eb708fbca31deafe1d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ConfigurationManager
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SpaceTacking.unity
+  - Assets/Scenes/AllSidesTracking.unity
   playerPath: C:/Users/GGPC/Desktop/Prasanth/PedestrianDynamics/Application/PedestrianDynamics.exe

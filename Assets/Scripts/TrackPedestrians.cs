@@ -15,6 +15,7 @@ public class TrackPedestrians : MonoBehaviour
     [SerializeField] private float _speed = 0.5f;
 
     private KinectSensor _sensor;
+    private List<Body> trackedBodies;
 
     //public Text NumberOfPeople;
 
@@ -50,6 +51,8 @@ public class TrackPedestrians : MonoBehaviour
             var pointCloudDepth = frame.DepthFrameSource?.PointCloud;
             var pointCloudColor = frame.ColorFrameSource?.PointCloud;
             var bodies = frame.BodyFrameSource?.Bodies;
+            trackedBodies = new List<Body>();
+            trackedBodies = frame.BodyFrameSource?.Bodies;
 
             _pointCloud.Load(pointCloudColor, pointCloudDepth);
             _stickmanManager.Load(bodies);
@@ -57,6 +60,10 @@ public class TrackPedestrians : MonoBehaviour
         //NumberOfPeople.text = "In space : " + _stickmanManager.Count;
     }
 
+    public List<Body> GetTrackedBodies()
+    {
+        return trackedBodies;
+    }
 
     private void LateUpdate()
     {

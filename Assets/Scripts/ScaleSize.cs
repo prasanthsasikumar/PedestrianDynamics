@@ -39,7 +39,6 @@ public class ScaleSize : MonoBehaviour
         {
             obj.ScaleToParent();
         }
+        Physics.SyncTransforms();
     }
-
-
 }

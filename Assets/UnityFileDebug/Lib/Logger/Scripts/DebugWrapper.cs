@@ -18,7 +18,8 @@ public enum DLogType
     Physics,
     ScanArea,
     Speed,
-    Density
+    Density,
+    FlowRate
 }
 
 public static class Debug
