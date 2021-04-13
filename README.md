@@ -1,7 +1,9 @@
 # PedestrianDynamics [Massey University]
 
 [![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/MasseyLogo.png)](https://www.massey.ac.nz/)
+
 [![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/frg.png)](https://fireresearchgroup.com/)
+
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/prasanthsasikumar/PedestrianDynamics)
 
 Unity Application that uses a kinect device to track movemnet of people in a give space. Using UI, the tracking space can be adjusted along with other parameters.
