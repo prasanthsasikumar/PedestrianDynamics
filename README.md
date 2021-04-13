@@ -7,13 +7,13 @@
 Unity Application that uses a kinect device to track movemnet of people in a give space. Using UI, the tracking space can be adjusted along with other parameters.
 
 ## Modules
-  *Configuration Manager - Lets the user save and load all the UI parameters as external configuration file.
-  *Record/Playback - Lets users record and playback body tracking information without capturing RGB information. (Ethics applications). Recording function has the ability to capture a point cloud frame to get the reference.
-  *Scan Area - Users can use the sliders to adjust the size and rotation of the scanning area.
-  *Exit areas - Users can chose to track exit areas from the scan space.
-  *Density and Area - shows the realtime density and area of the scanning area.
-  *Navigation - User can adjust the scan area by clicking and dragging the scaning box. Right click and WASD lets the user move in the 3D space. 
-  *Data Logging - Data logged to a csv file under the following labels:
+  * Configuration Manager - Lets the user save and load all the UI parameters as external configuration file.
+  * Record/Playback - Lets users record and playback body tracking information without capturing RGB information. (Ethics applications). Recording function has the ability to capture a point cloud frame to get the reference.
+  * Scan Area - Users can use the sliders to adjust the size and rotation of the scanning area.
+  * Exit areas - Users can chose to track exit areas from the scan space.
+  * Density and Area - shows the realtime density and area of the scanning area.
+  * Navigation - User can adjust the scan area by clicking and dragging the scaning box. Right click and WASD lets the user move in the 3D space. 
+  * Data Logging - Data logged to a csv file under the following labels:
 
 ## Logged Data labels
 | **Option** | **Unit** | **Description** |
