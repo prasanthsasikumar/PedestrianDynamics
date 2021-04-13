@@ -7,12 +7,11 @@ using UnityEngine.UI;
 public class ScanAreaTracker : MonoBehaviour
 {
     private List<Body> trackedBodies, trackedBodiesInsideScanArea;
+    private GameObject[] exits;
+
     public Text NumberOfPeopleinScanArea;
-    
-
     public FlowMonitor flowMonitor;
-
-    // Start is called before the first frame update
+    
     void Start() 
     {
         trackedBodies = new List<Body>();
@@ -26,11 +25,26 @@ public class ScanAreaTracker : MonoBehaviour
         {
             if(trackedBody.ID == bodyId)
             {
-                flowMonitor.AddTrackingInfo(bodyId, other.transform.position, Time.time * 1000);
+                flowMonitor.AddTrackingInfo(bodyId, other.transform.position, System.DateTime.Now, true);
+               // trackedBodiesInsideScanArea.Add(trackedBody);
+                Debug.Log("Adding TrackedBody " + trackedBodiesInsideScanArea.Count, DLogType.Logic);
                 return;
             }
         }
-    }    
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        uint bodyId = other.transform.parent.transform.parent.gameObject.GetComponent<Stickman>().id;
+        foreach (Body trackedBody in trackedBodies)
+        {
+            if (trackedBody.ID == bodyId)
+            {
+                //trackedBodiesInsideScanArea.Remove(trackedBody);
+                Debug.Log("Removing TrackedBody " + trackedBodiesInsideScanArea.Count, DLogType.Logic);
+            }
+        }
+    }
 
     public List<Body> GetListOfBodiesthatAreInScanArea()
     {
@@ -40,12 +54,12 @@ public class ScanAreaTracker : MonoBehaviour
     private void Update()
     {
         trackedBodiesInsideScanArea = new List<Body>();//Clear the list every update
-        trackedBodies = GameObject.FindObjectOfType<TrackPedestrians>().GetTrackedBodies();
+        trackedBodies = GameObject.FindObjectOfType<ApplicationManager>().GetTrackedBodies();
         if (trackedBodies == null) return;
 
         foreach (Body trackedBody in trackedBodies)
         {
-            if (this.GetComponent<BoxCollider>().bounds.Contains(trackedBody.Joints[JointType.Pelvis].Position))
+            if (this.GetComponent<BoxCollider>().bounds.Contains(trackedBody.Joints[JointType.Pelvis].Position) && !CheckIfAreaOverlappingWithExits(trackedBody.Joints[JointType.Pelvis].Position))
             {
                 trackedBodiesInsideScanArea.Add(trackedBody);
             }
@@ -54,6 +68,7 @@ public class ScanAreaTracker : MonoBehaviour
         NumberOfPeopleinScanArea.text = "In Scan space : " + trackedBodiesInsideScanArea.Count;
     }
 
+    //NOT USED
     bool ColliderContainsPoint(Transform ColliderTransform, Vector3 Point)
     {
         Vector3 localPos = ColliderTransform.InverseTransformPoint(Point);
@@ -61,5 +76,16 @@ public class ScanAreaTracker : MonoBehaviour
             return true;
         else
             return false;
+    }
+
+    private bool CheckIfAreaOverlappingWithExits(Vector3 position)
+    {
+        exits = null;
+        exits =  GameObject.FindGameObjectsWithTag("exit");
+        foreach (GameObject exit in exits)
+        {
+            if (exit.GetComponent<BoxCollider>().bounds.Contains(position)) return true;
+        }
+        return false;
     }
 }

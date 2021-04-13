@@ -6,7 +6,7 @@ public class ScaleSize : MonoBehaviour
 {
     public bool enableAutoScale = false;
 
-    private AutoScale[] scales;
+    public AutoScale[] scales;
 
     public void ChangeZAxis(float value)
     {

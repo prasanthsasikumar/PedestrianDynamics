@@ -18,6 +18,8 @@ public enum DLogType
     Physics,
     ScanArea,
     Speed,
+    AverageSpeed,
+    Trajectory,
     Density,
     FlowRate
 }

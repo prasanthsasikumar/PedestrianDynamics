@@ -10,6 +10,7 @@ namespace LightBuzz.Kinect4Azure
         [SerializeField] private Configuration _configuration;
         [SerializeField] private UniformImage _image;
         [SerializeField] private StickmanManager _stickmanManager;
+        [SerializeField] private PointCloud _pointCloud;
 
         [SerializeField] private Image startStopBtnImg;
         [SerializeField] private Sprite[] startStopSprites;
@@ -44,7 +45,7 @@ namespace LightBuzz.Kinect4Azure
                 ColorResolution = _sensor.Configuration.ColorResolution.Size(),
                 DepthResolution = _sensor.Configuration.DepthMode.Size(),
                 RecordColor = true,
-                RecordDepth = false,
+                RecordDepth = true,
                 RecordBody = true,
                 RecordFloor = false,
                 RecordIMU = false
@@ -101,6 +102,14 @@ namespace LightBuzz.Kinect4Azure
                 }
             }
 
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                mediaBarPlayer.LoadVideo(_recorder.Configuration.Path);
+                mediaBarPlayer.Play();
+                backBtnGO.SetActive(true);
+                recordingPanel.SetActive(false);
+            }
+
             UpdateFrame();
         }
 
@@ -131,6 +140,9 @@ namespace LightBuzz.Kinect4Azure
 
             if (frame != null)
             {
+                var pointCloudDepth = frame.DepthFrameSource?.PointCloud;
+                var pointCloudColor = frame.ColorFrameSource?.PointCloud;
+                _pointCloud.Load(pointCloudColor, pointCloudDepth);
                 if (frame.ColorFrameSource != null)
                 {
                     _image.Load(frame.ColorFrameSource);

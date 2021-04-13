@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,32 +20,37 @@ public class AutoScale : MonoBehaviour
 
     public void ScaleToParent()
     {
-        side.localScale = new Vector3(this.transform.localScale.x, side.localScale.y, this.transform.localScale.z);
         if (attachedToSide == AttachedToSide.FrontSide)
         {
-            newPosition = transform.position - (side.transform.up * ((transform.localScale.y / 2) + gap));
-            side.transform.SetPositionAndRotation(newPosition, this.transform.rotation);
-        }
-        else if (attachedToSide == AttachedToSide.BackSide)
-        {
-            newPosition = transform.position + (side.transform.up * ((transform.localScale.y / 2) + gap));
-            side.transform.SetPositionAndRotation(newPosition, this.transform.rotation);
-        }
-        else if (attachedToSide == AttachedToSide.Right)
-        {
+
             side.transform.Rotate(90, 0, 0);
             newPosition = transform.position - (side.transform.forward * ((transform.localScale.z / 2) + gap));
             side.transform.SetPositionAndRotation(newPosition, this.transform.rotation);
             side.transform.Rotate(90, 0, 0);
-            side.transform.localScale = new Vector3(side.transform.localScale.x, side.transform.localScale.y, transform.localScale.y);
+            side.transform.localScale = new Vector3(this.transform.localScale.x, side.transform.localScale.y, transform.localScale.y);
         }
-        else if (attachedToSide == AttachedToSide.Left)
+        else if (attachedToSide == AttachedToSide.BackSide)
         {
             side.transform.Rotate(90, 0, 0);
             newPosition = transform.position + (side.transform.forward * ((transform.localScale.z / 2) + gap));
             side.transform.SetPositionAndRotation(newPosition, this.transform.rotation);
             side.transform.Rotate(90, 0, 0);
-            side.transform.localScale = new Vector3(side.transform.localScale.x, side.transform.localScale.y, transform.localScale.y);
+            side.transform.localScale = new Vector3(this.transform.localScale.x, side.transform.localScale.y, transform.localScale.y);
+        }
+        else if (attachedToSide == AttachedToSide.Right)
+        {
+            newPosition = transform.position + (this.transform.right * ((transform.localScale.x / 2) + gap));
+            side.transform.SetPositionAndRotation(newPosition, this.transform.rotation);
+            side.transform.Rotate(0, 0, 90);
+            side.localScale = new Vector3(this.transform.localScale.y, side.localScale.y, this.transform.localScale.z);
+        }
+        else if (attachedToSide == AttachedToSide.Left)
+        {
+            //side.transform.Rotate(0, 0, 90);
+            newPosition = transform.position - (this.transform.right * ((transform.localScale.x / 2) + gap));
+            side.transform.SetPositionAndRotation(newPosition, this.transform.rotation);
+            side.transform.Rotate(0, 0, 90);
+            side.localScale = new Vector3(this.transform.localScale.y, side.localScale.y, this.transform.localScale.z);
         }
 
     }

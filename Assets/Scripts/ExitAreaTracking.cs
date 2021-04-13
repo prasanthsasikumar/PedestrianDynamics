@@ -48,7 +48,7 @@ public class ExitAreaTracking : MonoBehaviour
             if (CheckIfBodyIsInScanArea(bodyID) && !peopleEntered.Contains(bodyID))
             {
                 peopleExited.Add(bodyID);
-                flowMonitor.AddTrackingInfo(bodyID,transform.position,Time.time * 1000);
+                flowMonitor.AddTrackingInfo(bodyID,transform.position, System.DateTime.Now, false);
                 Debug.Log("Body " + bodyID + " exited via "+ thisSide, DLogType.ScanArea); //at " + Time.time);
                 //Debug.Log(Vector3.Distance(other.transform.position, ScanArea.transform.position));
                 //Debug.Log(Vector3.Distance(this.transform.position, ScanArea.transform.position));

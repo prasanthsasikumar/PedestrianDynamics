@@ -54,18 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\LightBuzz_Azure_Kinect\Scripts\Editor\BuildEventsEditor.cs" />
-    <Compile Include="Assets\Awesome Charts\Core\Scripts\Editor\ChartMenuItems.cs" />
-    <Compile Include="Assets\Awesome Charts\Core\Scripts\Editor\YAxisEditor.cs" />
     <Compile Include="Assets\LightBuzz_Azure_Kinect\Scripts\Editor\UnityEnvironment.cs" />
-    <Compile Include="Assets\Awesome Charts\Core\Scripts\Editor\BarChartConfigEditor.cs" />
-    <Compile Include="Assets\Awesome Charts\Core\Scripts\Editor\AxisBaseEditor.cs" />
-    <Compile Include="Assets\Awesome Charts\Core\Scripts\Editor\BarEntryDrawer.cs" />
     <Compile Include="Assets\UnityFileDebug\Lib\Logger\Editor\OpenInFileBrowser.cs" />
-    <Compile Include="Assets\Awesome Charts\Core\Scripts\Editor\XAxisEditor.cs" />
     <Compile Include="Assets\LightBuzz_Azure_Kinect\Scripts\Editor\Demo_Kinect4Azure_AvateeringEditor.cs" />
-    <Compile Include="Assets\UnityFileDebug\Lib\Editor\PackageAsset.cs" />
     <Compile Include="Assets\UnityFileDebug\Lib\Logger\Editor\UnityFileDebugEditor.cs" />
-    <Compile Include="Assets\Awesome Charts\Core\Scripts\Editor\LineEntryDrawer.cs" />
+    <Compile Include="Assets\UnityFileDebug\Lib\Editor\PackageAsset.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
