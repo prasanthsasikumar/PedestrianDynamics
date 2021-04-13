@@ -16,11 +16,12 @@ Data Logging - Data logged to a csv file under the following labels:
 ## Logged Data labels
 | **Option** | **Default** | **Description** |
 | --- | --- | --- |
-| `limit` | `8` | Number of Tactors connect to the device. |
-| `min` | `80` | Minimum value that can be given to the tactor.|
-| `max` | `255` | Maximum value that can be given to the tactor. |
-| `value` | `100` | Default value that is given to the tactor. |
-| `boardTypes` | `BoardTypes` | Type of Boards Available |
+| `ScanArea` | `m^2` | Area of the space being scanned. |
+| `Speed` | `m/s` | Speed of each body moving in the scanning area.|
+| `Density` | `pp/m^2` | Number of people / Scan Area. |
+| `AverageSpeed` | `m/s` | Average speed of the body during the total duration of its movement. |
+| `FlowRate` | `pp/s` | Number of people exiting a side |
+| `Trajectory` | `Position` | Position of the body during each second|
 
 ### REQUIREMENTS
 - Microsoft Azure Kinect 
