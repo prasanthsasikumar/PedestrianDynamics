@@ -1,6 +1,6 @@
 # PedestrianDynamics [Massey University]
 
-[![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/MasseyLogo.png)](https://www.massey.ac.nz/)
+                  [![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/MasseyLogo.png)](https://www.massey.ac.nz/)
 
 [![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/frg.png)](https://fireresearchgroup.com/)
 
