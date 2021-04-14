@@ -6,7 +6,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/prasanthsasikumar/PedestrianDynamics)
 
-Unity Application that uses a kinect device to track movement of people in a given space. Using UI, the tracking space can be adjusted along with other parameters.
+Unity Application that uses a Kinect device to track the movement of people in a given space. Using UI, the tracking space can be adjusted along with other parameters.
 
 ## Modules
   * Configuration Manager - Lets the user save and load all the UI parameters as external configuration file.
