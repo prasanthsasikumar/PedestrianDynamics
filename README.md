@@ -1,10 +1,12 @@
 # PedestrianDynamics [Massey University]
 
-[![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/MasseyLogo.png)](https://www.massey.ac.nz/)
+   [![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/MasseyLogo.png)](https://www.massey.ac.nz/)
+
 [![N|Solid](https://github.com/prasanthsasikumar/PedestrianDynamics/blob/main/Assets/Resources/frg.png)](https://fireresearchgroup.com/)
+
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/prasanthsasikumar/PedestrianDynamics)
 
-Unity Application that uses a kinect device to track movemnet of people in a give space. Using UI, the tracking space can be adjusted along with other parameters.
+Unity Application that uses a Kinect device to track the movement of people in a given space. Using UI, the tracking space can be adjusted along with other parameters.
 
 ## Modules
   * Configuration Manager - Lets the user save and load all the UI parameters as external configuration file.
