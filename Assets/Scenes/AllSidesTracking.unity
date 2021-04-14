@@ -353,7 +353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f734c0cc62c04e2bb287addeb1c674b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chart: {fileID: 1734782189}
 --- !u!4 &10432597
 Transform:
   m_ObjectHideFlags: 0
@@ -2549,7 +2548,7 @@ MonoBehaviour:
   fileType: 0
   absolutePath: c:\
   filePath: C:/Users/GGPC/AppData/LocalLow/MasseyUniversity/PedestrianDynamics
-  filePathFull: C:/Users/GGPC/AppData/LocalLow/MasseyUniversity/PedestrianDynamics\PedestrainDynamics.2021.04.13.09.37.04.csv
+  filePathFull: C:/Users/GGPC/AppData/LocalLow/MasseyUniversity/PedestrianDynamics\PedestrainDynamics.2021.04.13.15.11.54.csv
   count: 0
 --- !u!4 &359811594
 Transform:
@@ -3947,6 +3946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableAutoScale: 0
+  scales: []
 --- !u!114 &621903557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4367,6 +4367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableAutoScale: 0
+  scales: []
 --- !u!114 &652046048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5976,6 +5977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumberOfPeopleinScanArea: {fileID: 1852889798}
   flowMonitor: {fileID: 1417501486}
+  applicationManager: {fileID: 359811595}
 --- !u!54 &1041082944
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6067,6 +6069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableAutoScale: 1
+  scales: []
 --- !u!114 &1041082949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7982,6 +7985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableAutoScale: 0
+  scales: []
 --- !u!1 &1296258776
 GameObject:
   m_ObjectHideFlags: 0
@@ -8579,7 +8583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   densityText: {fileID: 1205978067}
-  chart: {fileID: 1734782189}
   scanArea: {fileID: 1041082941}
   stickmanManager: {fileID: 1828470112}
   timeScale: {fileID: 186204889}
@@ -10671,47 +10674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b5b656e7af34ff68b4b8528ae8ce88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  legendView: {fileID: 0}
-  xAxis:
-    lineThickness: 5
-    lineColor: {r: 1, g: 1, b: 1, a: 0.74509805}
-    minAxisValue: 0
-    maxAxisValue: 1
-    autoAxisMinValue: 1
-    autoAxisMaxValue: 1
-    linesCount: 5
-    labelSize: 30
-    labelColor: {r: 1, g: 1, b: 1, a: 0.74509805}
-    labelMargin: 5
-    labelFont: {fileID: 0}
-    labelFontStyle: 0
-    dashedLine: 1
-    shouldDrawLabels: 1
-    shouldDrawLines: 1
-    lineStep: 0
-  yAxis:
-    lineThickness: 5
-    lineColor: {r: 1, g: 1, b: 1, a: 0.74509805}
-    minAxisValue: 1
-    maxAxisValue: 10
-    autoAxisMinValue: 1
-    autoAxisMaxValue: 1
-    linesCount: 5
-    labelSize: 30
-    labelColor: {r: 1, g: 1, b: 1, a: 0.74509805}
-    labelMargin: 5
-    labelFont: {fileID: 0}
-    labelFontStyle: 0
-    dashedLine: 1
-    shouldDrawLabels: 1
-    shouldDrawLines: 1
-  data:
-    customLabels: []
-    dataSets: []
-  config:
-    valueIndicatorSize: 12
-    showValueIndicators: 1
-    popupPrefab: {fileID: 0}
 --- !u!224 &1734782190
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12246,6 +12208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableAutoScale: 0
+  scales: []
 --- !u!114 &1907491154
 MonoBehaviour:
   m_ObjectHideFlags: 0
