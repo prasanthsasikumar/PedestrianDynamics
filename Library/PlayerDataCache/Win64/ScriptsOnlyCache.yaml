@@ -186,9 +186,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4438}
     - Class: 114
-      Script: {instanceID: 17382}
+      Script: {instanceID: 17378}
     - Class: 114
-      Script: {instanceID: 17412}
+      Script: {instanceID: 17408}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -650,7 +650,7 @@ ScriptsOnlyBuild:
     className: SoftMaskScript
   - hash:
       serializedVersion: 2
-      Hash: 56966f44afc1d29aa75fb2ae18b8e70f
+      Hash: 628a1e188f75212081ddbcdae2655bc2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScanAreaTracker
