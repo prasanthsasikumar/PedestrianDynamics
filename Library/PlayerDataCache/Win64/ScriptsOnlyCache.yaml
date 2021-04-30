@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - LightBuzz.Kinect4Azure.StickmanManager
     - MoveCamera
     - OpenDirectory
+    - PlaybackAlgorithmSelector
     - RotateObject
     - SSS.UnityFileDebug.UnityFileDebug
     - ScaleSize
@@ -100,67 +101,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1592}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1642}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 1694}
+      Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1736}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 1746}
+      Script: {instanceID: 1700}
     - Class: 114
-      Script: {instanceID: 1748}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 1824}
+      Script: {instanceID: 1752}
     - Class: 114
-      Script: {instanceID: 2076}
+      Script: {instanceID: 1828}
     - Class: 114
-      Script: {instanceID: 2084}
+      Script: {instanceID: 2080}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 2088}
     - Class: 114
-      Script: {instanceID: 2226}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2302}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2344}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 2386}
+      Script: {instanceID: 2348}
     - Class: 114
-      Script: {instanceID: 2412}
+      Script: {instanceID: 2390}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 2510}
+      Script: {instanceID: 2504}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2548}
+      Script: {instanceID: 2542}
     - Class: 114
-      Script: {instanceID: 2556}
+      Script: {instanceID: 2552}
     - Class: 114
-      Script: {instanceID: 2562}
+      Script: {instanceID: 2560}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2566}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2626}
     - Class: 114
-      Script: {instanceID: 2660}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 2730}
+      Script: {instanceID: 2664}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 2832}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 2890}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 2910}
+      Script: {instanceID: 2894}
     - Class: 114
       Script: {instanceID: 3066}
     - Class: 114
@@ -182,13 +183,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4272}
     - Class: 114
-      Script: {instanceID: 4428}
+      Script: {instanceID: 4426}
     - Class: 114
-      Script: {instanceID: 4438}
+      Script: {instanceID: 4436}
     - Class: 114
-      Script: {instanceID: 17378}
+      Script: {instanceID: 17330}
     - Class: 114
-      Script: {instanceID: 17408}
+      Script: {instanceID: 17360}
+    - Class: 114
+      Script: {instanceID: 52516}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -218,6 +221,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -228,6 +237,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
@@ -398,12 +419,6 @@ ScriptsOnlyBuild:
     className: UICornerCut
   - hash:
       serializedVersion: 2
-      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
-  - hash:
-      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -464,7 +479,7 @@ ScriptsOnlyBuild:
     className: Stepper
   - hash:
       serializedVersion: 2
-      Hash: 300fd99066f8c288e85f5e81ce65fe34
+      Hash: 7abdf6195e530455923d81f2f009ab0f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
@@ -650,7 +665,7 @@ ScriptsOnlyBuild:
     className: SoftMaskScript
   - hash:
       serializedVersion: 2
-      Hash: 628a1e188f75212081ddbcdae2655bc2
+      Hash: 0fc61f76ece19c7a503abc2d0eefda8d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScanAreaTracker
@@ -980,7 +995,7 @@ ScriptsOnlyBuild:
     className: UIParticleSystem
   - hash:
       serializedVersion: 2
-      Hash: a306e12d896ddcca949923c805691027
+      Hash: c8c9d8ff54f5e1e108296aa19c108880
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
@@ -1128,12 +1143,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.UI.Extensions.Examples.FancyScrollViewExample02
     className: Cell
-  - hash:
-      serializedVersion: 2
-      Hash: 69415240821be7986b27e72bf9609a30
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: fe2d355deb0ca31d59a0a7cf4d141fc3
@@ -1832,7 +1841,7 @@ ScriptsOnlyBuild:
     className: ResizePanel
   - hash:
       serializedVersion: 2
-      Hash: fd68d84f33fad85aac38f2739c0ee270
+      Hash: 5cc439bf63c0539d39588e69465ac2ab
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
@@ -2102,12 +2111,6 @@ ScriptsOnlyBuild:
     className: AwesomeMenu
   - hash:
       serializedVersion: 2
-      Hash: 7ab0e790220bdca831fdd886b339039d
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GridLayoutGroup
-  - hash:
-      serializedVersion: 2
       Hash: 47930f3b40e24ef5b3b5e3d9ada7097a
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -2172,7 +2175,13 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.UI.Extensions
     className: ScrollSnap
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaybackAlgorithmSelector
   platform: 19
   scenePathNames:
   - Assets/Scenes/AllSidesTracking.unity
-  playerPath: C:/Users/GGPC/Desktop/Prasanth/Application/PedestrianDynamics.exe
+  playerPath: D:/2021 [Work]/Application/PedestrianDynamics.exe

@@ -12,6 +12,7 @@ public class ScanAreaTracker : MonoBehaviour
     public Text NumberOfPeopleinScanArea;
     public FlowMonitor flowMonitor;
     public ApplicationManager applicationManager;
+    public int algorithm;
     
     void Start() 
     {
@@ -28,8 +29,7 @@ public class ScanAreaTracker : MonoBehaviour
             {
                 flowMonitor.AddTrackingInfo(bodyId, other.transform.position, System.DateTime.Now, true);
                 bodiesEnteredScanArea.Add(trackedBody);
-                //trackedBodiesInsideScanArea.Add(trackedBody);
-                //Debug.Log("Adding TrackedBody " + trackedBodiesInsideScanArea.Count, DLogType.Logic);
+                if(algorithm == 6) trackedBodiesInsideScanArea.Add(trackedBody);
                 return;
             }
         }
@@ -42,8 +42,7 @@ public class ScanAreaTracker : MonoBehaviour
         {
             if (trackedBody.ID == bodyId)
             {
-                //trackedBodiesInsideScanArea.Remove(trackedBody);
-                //Debug.Log("Removing TrackedBody " + trackedBodiesInsideScanArea.Count, DLogType.Logic);
+                if (algorithm == 6) trackedBodiesInsideScanArea.Remove(trackedBody);
             }
         }
     }
@@ -61,20 +60,38 @@ public class ScanAreaTracker : MonoBehaviour
 
         foreach (Body trackedBody in applicationManager.GetTrackedBodies())
         {
-            
-            if (!bodyNotEnteredBefore(trackedBody.ID)) return;
-
-            if(IsPointInside(trackedBody.Joints[JointType.Pelvis].Position, trackedBody.ID)) trackedBodiesInsideScanArea.Add(trackedBody);
-            /*if (this.GetComponent<BoxCollider>().bounds.Contains(trackedBody.Joints[JointType.Pelvis].Position) && !CheckIfAreaOverlappingWithExits(trackedBody.Joints[JointType.Pelvis].Position))
+            if (algorithm == 1)//MainOne
             {
-                trackedBodiesInsideScanArea.Add(trackedBody);
-            }*/
+                if (!BodyNotEnteredBefore(trackedBody.ID)) return;
+                if (IsPointInside(trackedBody.Joints[JointType.Pelvis].Position, trackedBody.ID)) trackedBodiesInsideScanArea.Add(trackedBody);
+            } else if (algorithm == 2)
+            {
+                if (IsPointInside(trackedBody.Joints[JointType.Pelvis].Position, trackedBody.ID)) trackedBodiesInsideScanArea.Add(trackedBody);
+            } else if(algorithm == 3)
+            {
+                if (this.GetComponent<BoxCollider>().bounds.Contains(trackedBody.Joints[JointType.Pelvis].Position) && !CheckIfAreaOverlappingWithExits(trackedBody.Joints[JointType.Pelvis].Position))
+                {
+                    trackedBodiesInsideScanArea.Add(trackedBody);
+                }
+            }else if(algorithm == 4)
+            {
+                if (!BodyNotEnteredBefore(trackedBody.ID)) return;
+                if (CheckIfPointInside(trackedBody.Joints[JointType.Pelvis].Position, trackedBody.ID)) trackedBodiesInsideScanArea.Add(trackedBody); Debug.Log("4");
+            }
+            else if (algorithm == 5)
+            {
+                if (CheckIfPointInside(trackedBody.Joints[JointType.Pelvis].Position, trackedBody.ID)) trackedBodiesInsideScanArea.Add(trackedBody); Debug.Log("5");
+            }
+            else if (algorithm == 6)
+            {
+                trackedBodiesInsideScanArea.Add(trackedBody);Debug.Log("6");
+            }
         }
 
         NumberOfPeopleinScanArea.text = "In Scan space : " + trackedBodiesInsideScanArea.Count;
     }
 
-    bool bodyNotEnteredBefore(uint id)
+    bool BodyNotEnteredBefore(uint id)
     {
         foreach(Body body in bodiesEnteredScanArea)
         {
@@ -82,6 +99,7 @@ public class ScanAreaTracker : MonoBehaviour
         }
         return false;
     }
+
 
     //NOT USED
     bool ColliderContainsPoint(Transform ColliderTransform, Vector3 Point)
@@ -115,8 +133,8 @@ public class ScanAreaTracker : MonoBehaviour
                       Mathf.Abs(Vector3.Dot(d, dy)) <= half.y &&
                       Mathf.Abs(Vector3.Dot(d, dz)) <= half.z;*/
 
-        Debug.Log(inside);
-        Debug.Log(Mathf.Abs(Vector3.Dot(d, dx)) +":"+ half.x+"   :   " + id);
+        //Debug.Log(inside);
+        //Debug.Log(Mathf.Abs(Vector3.Dot(d, dx)) +":"+ half.x+"   :   " + id);
 
         return inside;
     }
@@ -126,7 +144,7 @@ public class ScanAreaTracker : MonoBehaviour
         Vector3 half = this.transform.localScale / 2;
         Vector3 localPos = transform.InverseTransformPoint(point);
 
-        Debug.Log(Mathf.Abs(localPos.y) + " : " + half.y + "   :   " + id);
+        //Debug.Log(Mathf.Abs(localPos.y) + " : " + half.y + "   :   " + id);
         if (Mathf.Abs(localPos.x) < half.x && Mathf.Abs(localPos.y) < half.y && Mathf.Abs(localPos.z) < half.z)
             return true;
         else

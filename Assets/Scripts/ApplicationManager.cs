@@ -30,21 +30,11 @@ public class ApplicationManager : MonoBehaviour
     {
         _sensor = KinectSensor.Create(_configuration);
 
-        if (_sensor == null)
-        {
-            Debug.LogError("Sensor not connected!");
-            return;
-        }
-
-        _sensor.Open();
-
-        Camera.main.transform.LookAt(_pointCloud.transform.position);
-
         _recorder = new VideoRecorder(new VideoConfiguration
         {
             Path = Path.Combine(Application.persistentDataPath, "Video"),
-            ColorResolution = _sensor.Configuration.ColorResolution.Size(),
-            DepthResolution = _sensor.Configuration.DepthMode.Size(),
+            ColorResolution = LightBuzz.Kinect4Azure.ColorResolution.ColorResolution_1080P.Size(), //_sensor.Configuration.ColorResolution.Size(),
+            DepthResolution = LightBuzz.Kinect4Azure.DepthMode.NFOV_Unbinned.Size(),//_sensor.Configuration.DepthMode.Size(),
             RecordColor = true,
             RecordDepth = false,
             RecordBody = true,
@@ -54,6 +44,16 @@ public class ApplicationManager : MonoBehaviour
         _recorder.OnRecordingStarted += OnRecordingStarted;
         _recorder.OnRecordingStopped += OnRecordingStopped;
         _recorder.OnRecordingCompleted += OnRecordingCompleted;
+
+        if (_sensor == null)
+        {
+            Debug.LogError("Sensor not connected!");
+            return;
+        }
+
+        _sensor.Open();
+
+        Camera.main.transform.LookAt(_pointCloud.transform.position);
     }
 
 
@@ -64,12 +64,17 @@ public class ApplicationManager : MonoBehaviour
 
     private void Update()
     {
-        if (_sensor == null || !_sensor.IsOpen) return;
 
-        Frame frame = _sensor.Update();
+        Frame frame;
         if (mediaBarPlayer.IsPlaying)
         {
             frame = mediaBarPlayer.Update();
+        }
+        else
+        {
+            if (_sensor == null || !_sensor.IsOpen) return;
+
+            frame = _sensor.Update();
         }
 
         if (frame != null)
@@ -156,6 +161,7 @@ public class ApplicationManager : MonoBehaviour
         if(!state) mediaBarPlayer.Stop();
         else
         {
+            Debug.Log("Recorder " + _recorder.ToString());
             mediaBarPlayer.LoadVideo(_recorder.Configuration.Path);
             mediaBarPlayer.Play();
         }
