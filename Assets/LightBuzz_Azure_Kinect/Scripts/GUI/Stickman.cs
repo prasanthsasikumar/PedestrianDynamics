@@ -16,6 +16,7 @@ namespace LightBuzz.Kinect4Azure
         [SerializeField] private Transform[] _points = new Transform[Enum.GetValues(typeof(JointType)).Length];
         [SerializeField] private LineRenderer[] _lines = new LineRenderer[Enum.GetValues(typeof(JointType)).Length];
         [SerializeField] public uint id;
+        [SerializeField] public TextMesh idText;
 
         private readonly Tuple<JointType, JointType>[] _bones =
         {
@@ -108,6 +109,10 @@ namespace LightBuzz.Kinect4Azure
                 _lines[i].SetPosition(0, position1);
                 _lines[i].SetPosition(1, position2);
             }
+            //Show body id
+            idText.text = body.ID.ToString();
+            Vector3 textPosition = body.Joints[JointType.Head].Position;
+            idText.gameObject.transform.position = new Vector3(textPosition.x, -textPosition.y, textPosition.z);
         }
 
         /// <summary>
